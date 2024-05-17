@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Emulogic';
+    src: url(./assets/font/Emulogic-zrEw.ttf);
+}
+
+body, .refresh-btn {
+    background-color: black;
+    color: white;
+    font-family: 'Emulogic';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.board, .template {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    margin-bottom: 20px;
+}
+
+.template {
+    justify-content: start;
+    flex-direction: row;
+    width: 560px;
+    z-index: 0;
+}
+
+.refresh-btn {
+    cursor: pointer;
+    border: none;
+    width: 16px;
+    padding: 0;
+    z-index: 1;
+}
+
+h1 {
+    color: yellow;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    margin-left: -16px;
+}
+
+.grid {
+    width: 560px;
+    border: solid 1px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot, .power-pellet {
+    background-color: tan;
+    border: 8px solid black;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+.wall {
+    background-color: blue;
+}
+
+.power-pellet {
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.pac-dot.ghost, .power-pellet.ghost {
+    background-color: transparent;
+    border: none;
+}
+
+/* characters */
+
+.pac-man {
+    background-image: url('./assets/img/pac-man.png');
+}
+
+.blinky, .pinky, .inky, .clyde, .pac-man, .scared-ghost {
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.blinky {
+    background-image: url('./assets/img/blinky.png');
+}
+
+.pinky {
+    background-image: url('./assets/img/pinky.png');
+}
+
+.inky {
+    background-image: url('./assets/img/inky.png');
+}
+
+.clyde {
+    background-image: url('./assets/img/clyde.png');
+}
+
+.scared-ghost {
+    background-image: url('./assets/img/scared-ghost.png') !important;
+}
